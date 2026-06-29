@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 }
 
 export default function AboutPage() {
-  const waNumber = process.env.WHATSAPP_NUMBER || '263771234567'
+  const waNumber = process.env.WHATSAPP_NUMBER || '263789977673'
   const waText   = encodeURIComponent("Hi Savannah Paths, I'd like to learn more about your services.")
   const waLink   = `https://wa.me/${waNumber}?text=${waText}`
 

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Services — Savannah Paths',
-  description: 'Itinerary consultation ($20) and visa appointment booking ($50) from Harare, Zimbabwe.',
+  description: 'Itinerary consultation ($30) and visa consultation ($150) from Harare, Zimbabwe.',
 }
 
 export default function ServicesPage() {
@@ -25,7 +25,7 @@ export default function ServicesPage() {
             <MapSVG /> Service 01
           </div>
           <h2 className="font-display text-3xl font-bold text-savannah-green">Itinerary Consultation</h2>
-          <div className="text-4xl font-bold text-savannah-amber">$20 <span className="text-base font-normal text-savannah-earth">/ consultation</span></div>
+          <div className="text-4xl font-bold text-savannah-amber">$30 <span className="text-base font-normal text-savannah-earth">/ consultation</span></div>
           <p className="text-savannah-earth leading-relaxed">
             Planning a trip without a clear itinerary is stressful. Our consultants build a practical, personalised day-by-day plan — covering where to stay, how to get there, what to do, and how much to budget. You leave with a document you can hand to anyone.
           </p>
@@ -44,7 +44,7 @@ export default function ServicesPage() {
               </li>
             ))}
           </ul>
-          <Link href="/book" className="btn-primary inline-flex">Book Itinerary Consult — $20</Link>
+          <Link href="/book" className="btn-primary inline-flex">Book Itinerary Consult — $30</Link>
         </div>
         <div className="flex justify-center">
           <ItineraryIllustration />
@@ -62,8 +62,8 @@ export default function ServicesPage() {
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-savannah-green/10 text-savannah-green text-sm font-semibold">
             <PassportSVG /> Service 02
           </div>
-          <h2 className="font-display text-3xl font-bold text-savannah-green">Visa Appointment Booking</h2>
-          <div className="text-4xl font-bold text-savannah-amber">$50 <span className="text-base font-normal text-savannah-earth">/ booking</span></div>
+          <h2 className="font-display text-3xl font-bold text-savannah-green">Visa Consultation</h2>
+          <div className="text-4xl font-bold text-savannah-amber">$150 <span className="text-base font-normal text-savannah-earth">/ consultation</span></div>
           <p className="text-savannah-earth leading-relaxed">
             Embassy booking portals are notoriously confusing — wrong slot types, conflicting requirements, and slots that disappear in seconds. We navigate these systems daily. Tell us your destination and travel dates and we&apos;ll secure your appointment slot and send you a clear checklist.
           </p>
@@ -82,7 +82,7 @@ export default function ServicesPage() {
               </li>
             ))}
           </ul>
-          <Link href="/book" className="btn-primary inline-flex">Book Visa Appointment Help — $50</Link>
+          <Link href="/book" className="btn-primary inline-flex">Book Visa Consultation — $150</Link>
         </div>
       </section>
 
@@ -128,7 +128,7 @@ const FAQS = [
   },
   {
     q: 'Can I get both services together?',
-    a: 'Yes — select "Both Services" when booking and we\'ll bundle them at $70 total.',
+    a: 'Yes — select "Both Services" when booking and we\'ll bundle them at $180 total.',
   },
 ]
 

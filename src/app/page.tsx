@@ -1,5 +1,4 @@
-import { Suspense } from 'react'
-import LeadForm from '@/components/LeadForm'
+import WhatsAppBooking from '@/components/WhatsAppBooking'
 
 export default function HomePage() {
   return (
@@ -17,11 +16,11 @@ export default function HomePage() {
           </span>
 
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold leading-tight max-w-3xl">
-            Your Journey Across Africa, Expertly Planned
+            Explore More, Worry Less.
           </h1>
 
           <p className="text-savannah-sand/90 text-lg max-w-2xl leading-relaxed">
-            From custom travel itineraries to stress-free visa appointments — Savannah Paths takes care of every detail so you can focus on the adventure.
+            Creating unforgettable travel experiences — from custom itineraries to visa consultations, Savannah Paths handles every detail so you can focus on the adventure.
           </p>
 
           <a href="#book" className="btn-primary text-base px-8 py-4 mt-2">
@@ -49,7 +48,7 @@ export default function HomePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ServiceCard
             icon={<MapIcon />}
-            price="$20"
+            price="$30"
             title="Itinerary Consultation"
             description="Work with our expert consultants to build a custom day-by-day travel plan. Hotels, activities, transport connections, budget breakdown — everything mapped out before you leave."
             features={['Custom day-by-day itinerary', 'Hotel & transport recommendations', 'Budget breakdown', 'Unlimited revisions (7 days)']}
@@ -58,8 +57,8 @@ export default function HomePage() {
           />
           <ServiceCard
             icon={<PassportIcon />}
-            price="$50"
-            title="Visa Appointment Booking"
+            price="$150"
+            title="Visa Consultation"
             description="Skip the confusion of embassy systems. We book your visa appointment, prepare your checklist, and guide you through every requirement for your destination country."
             features={['Appointment slot secured', 'Document checklist provided', 'Embassy system navigation', 'Follow-up support until appointment']}
             cta="Book Visa Help"
@@ -94,9 +93,7 @@ export default function HomePage() {
             Tell us where you want to go. We&apos;ll get back to you within 24 hours.
           </p>
         </div>
-        <Suspense>
-          <LeadForm />
-        </Suspense>
+        <WhatsAppBooking />
       </section>
     </>
   )

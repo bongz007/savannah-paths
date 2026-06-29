@@ -1,5 +1,7 @@
 import Link from 'next/link'
 
+const WA_NUMBER = '263789977673'
+
 export default function Footer() {
   const year = new Date().getFullYear()
   return (
@@ -27,8 +29,18 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             <li className="opacity-80">Harare, Zimbabwe</li>
             <li>
+              <a href={`tel:+${WA_NUMBER}`} className="hover:text-white transition-colors">
+                +263 78 997 7673
+              </a>
+            </li>
+            <li>
+              <a href="mailto:savannahpaths@gmail.com" className="hover:text-white transition-colors">
+                savannahpaths@gmail.com
+              </a>
+            </li>
+            <li>
               <a
-                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '263771234567'}`}
+                href={`https://wa.me/${WA_NUMBER}`}
                 className="hover:text-white transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"

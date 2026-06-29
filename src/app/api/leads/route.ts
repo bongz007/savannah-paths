@@ -41,7 +41,7 @@ export async function POST(req: NextRequest) {
 
     const fromEmail   = process.env.FROM_EMAIL   || 'noreply@savannahpaths.com'
     const notifyEmail = process.env.NOTIFY_EMAIL || 'admin@savannahpaths.com'
-    const waNumber    = process.env.WHATSAPP_NUMBER || '263771234567'
+    const waNumber    = process.env.WHATSAPP_NUMBER || '263789977673'
 
     const waText = encodeURIComponent(
       `Hi Savannah Paths, I'm ${full_name} and I'm interested in ${service}${destination ? ` to ${destination}` : ''}.`

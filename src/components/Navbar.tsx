@@ -10,9 +10,12 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 bg-savannah-green text-white shadow-md">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 font-display font-bold text-xl tracking-wide">
-          <SavannahIcon />
-          Savannah Paths
+        <Link href="/" className="flex items-center gap-3">
+          <CompassRoseLogo />
+          <div className="flex flex-col leading-tight">
+            <span className="font-display font-bold text-lg tracking-widest uppercase">Savannah Paths</span>
+            <span className="text-[9px] tracking-[0.2em] text-savannah-sand/80 uppercase">Travel Agency</span>
+          </div>
         </Link>
 
         {/* Desktop links */}
@@ -46,17 +49,26 @@ export default function Navbar() {
   )
 }
 
-function SavannahIcon() {
+function CompassRoseLogo() {
   return (
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-      <circle cx="14" cy="14" r="13" fill="#D4891F" />
-      {/* Sun */}
-      <circle cx="14" cy="10" r="3" fill="#F7F2E8" />
-      {/* Ground line */}
-      <path d="M2 20 Q8 16 14 18 Q20 20 26 16" stroke="#4A7C2A" strokeWidth="2" fill="none" strokeLinecap="round"/>
-      {/* Acacia silhouette */}
-      <path d="M14 18 L14 22" stroke="#5C3D2E" strokeWidth="1.5" strokeLinecap="round"/>
-      <path d="M11 17 Q14 15 17 17" stroke="#2D5016" strokeWidth="2" fill="none" strokeLinecap="round"/>
+    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+      {/* Outer circle */}
+      <circle cx="18" cy="18" r="17" stroke="#C9A96E" strokeWidth="1.2" fill="none"/>
+      {/* Inner circle */}
+      <circle cx="18" cy="18" r="13" stroke="#C9A96E" strokeWidth="0.6" fill="none"/>
+      {/* 8-point star compass rose */}
+      {/* Cardinal points (N/S/E/W) — longer */}
+      <path d="M18 2 L20 15 L18 18 L16 15 Z" fill="#F7F2E8"/>
+      <path d="M18 34 L20 21 L18 18 L16 21 Z" fill="#C9A96E"/>
+      <path d="M2 18 L15 16 L18 18 L15 20 Z" fill="#C9A96E"/>
+      <path d="M34 18 L21 16 L18 18 L21 20 Z" fill="#F7F2E8"/>
+      {/* Ordinal points (NE/NW/SE/SW) — shorter */}
+      <path d="M18 18 L26.5 9.5 L24 16 Z" fill="#F7F2E8" opacity="0.7"/>
+      <path d="M18 18 L9.5 9.5 L12 16 Z" fill="#F7F2E8" opacity="0.7"/>
+      <path d="M18 18 L26.5 26.5 L20 24 Z" fill="#C9A96E" opacity="0.7"/>
+      <path d="M18 18 L9.5 26.5 L16 24 Z" fill="#C9A96E" opacity="0.7"/>
+      {/* Centre dot */}
+      <circle cx="18" cy="18" r="2" fill="#D4891F"/>
     </svg>
   )
 }

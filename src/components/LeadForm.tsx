@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 
-const SERVICES = ['Itinerary Consult ($20)', 'Visa Appointment Booking ($50)', 'Both Services']
+const SERVICES = ['Itinerary Consult ($30)', 'Visa Consultation ($150)', 'Both Services']
 const SOURCES  = ['Facebook Ad', 'WhatsApp Group', 'Referral', 'Walk-in', 'Other']
 
 const MONTHS = [
@@ -77,7 +77,7 @@ export default function LeadForm({ compact = false }: Props) {
   }
 
   if (success) {
-    const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '263771234567'
+    const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '263789977673'
     const waText   = encodeURIComponent(
       `Hi Savannah Paths, I'm ${success.name} and I'm interested in ${success.service}${success.destination ? ` to ${success.destination}` : ''}.`
     )

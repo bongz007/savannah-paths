@@ -2,14 +2,15 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import WhatsAppFloat from '@/components/WhatsAppFloat'
 
 export const metadata: Metadata = {
-  title: 'Savannah Paths — Travel Consultancy | Harare, Zimbabwe',
+  title: 'Savannah Paths — Travel Agency | Harare, Zimbabwe',
   description:
-    'Professional travel consultancy based in Harare. Expert itinerary planning ($20) and visa appointment booking ($50) for destinations across Africa and beyond.',
+    'Explore More, Worry Less. Expert itinerary consultation ($30) and visa consultation ($150) from Harare, Zimbabwe.',
   openGraph: {
-    title: 'Savannah Paths — Travel Consultancy',
-    description: 'Expert itinerary planning and visa appointment booking from Harare, Zimbabwe.',
+    title: 'Savannah Paths — Travel Agency',
+    description: 'Explore More, Worry Less. Creating unforgettable travel experiences from Harare, Zimbabwe.',
     type: 'website',
   },
 }
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <WhatsAppFloat />
       </body>
     </html>
   )
